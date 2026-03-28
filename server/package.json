@@ -1,0 +1,19 @@
+{
+  "name": "devblog-backend",
+  "version": "1.0.0",
+  "description": "DevBlog backend using Node.js, Express and file storage",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "your-name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}

@@ -1,10 +1,12 @@
 const API = "http://localhost:3000/posts";
 
 async function loadPosts() {
+  const container = document.getElementById("posts");
+  if (!container) return;
+
   const res = await fetch(API);
   const posts = await res.json();
 
-  const container = document.getElementById("posts");
   container.innerHTML = "";
 
   posts.forEach(post => {
@@ -20,6 +22,8 @@ async function loadPosts() {
     `;
   });
 }
+
+loadPosts();
 
 async function createPost() {
   const title = document.getElementById("title").value;
@@ -39,7 +43,6 @@ async function createPost() {
     body: JSON.stringify({ title, content, imageUrl })
   });
 
-  loadPosts();
+  // ✅ Redirect to clean URL
+  window.location.href = "/published-blogs";
 }
-
-loadPosts();

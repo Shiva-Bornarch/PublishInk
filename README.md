@@ -1,15 +1,22 @@
 # PublishInk
 
+   # Frontend
 
+   
 blog-app/
 │
-├── client/                 # Frontend
+├── client/              
 │   ├── index.html
 │   ├── post.html
 │   ├── style.css
 │   └── script.js
-│
-├── server/                 # Backend
+
+
+
+
+
+│ # Backend
+├── server/                
 │   ├── src/
 │   │   ├── app.js
 │   │   ├── routes/postRoutes.js
@@ -20,6 +27,3 @@ blog-app/
 │   │
 │   ├── package.json
 │   └── Dockerfile
-│
-├── docker-compose.yml
-└── README.md

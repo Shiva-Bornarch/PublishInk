@@ -1,5 +1,5 @@
 // 🔥 CHANGE THIS to your EC2 public IP
-const API = "http://65.0.104.101:3000/posts";
+const API = "http://16.178.86.114:3000/posts";
 
 // =======================
 // 📝 CREATE BLOG
